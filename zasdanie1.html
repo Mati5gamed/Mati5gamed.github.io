@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        th {
+            background-color: cornflowerblue;
+        }
+
+        td {
+            background-color: gold;
+        }
+
+        .kolor {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        document.write("<strong> 1a </strong> <br>")
+        document.write("<strong>Witaj Javascript </strong> <br>");
+        document.write("<strong> 1b </strong> <br>")
+        for (var i = -22; i <= 22; i++)
+            document.write(i + "<br>");
+        document.write("<strong> 1c </strong><br>")
+        for (var i = 55; i >= -15; i -= 5)
+            document.write(i + "<br>");
+        document.write("<strong> 1d </strong><br>")
+        for (var i = 40; i >= 10; i--) {
+            if (i <= 15 || i >= 25)
+                document.write(i + "<br>")
+        }
+
+    </script>
+    <script>
+        console.log("<strong> 2a </strong> <br>")
+        for (var i = -40; i < 40; i++) {
+            if (i < 3 || i >= 30)
+                if (i % 2 != 0)
+                    console.log(i + "<br>");
+        }
+
+        console.log("<strong> 2b </strong> <br>")
+        for (var i = -20; i < 20; i++) {
+            if (i <= 5 || i >= 10)
+                if (i % 2 == 0)
+                    console.log(i + "<br>")
+        }
+        console.log("<strong> 2c </strong> <br>")
+        for (var i = -100; i < 41; i++) {
+            if (i <= -28 || i >= 14)
+                if (i % 7 == 0)
+                    console.log(i + "<br>")
+        }
+
+    </script>
+    <script>
+
+        document.write("<strong> 3a </strong> <br>")
+        var n = prompt("Wpisz liczbę")
+        var liniax = Math.ceil(i)
+        var liniax = "";
+        for (var i = 0; i < n; i++) {
+            liniax = "x"
+            document.write(liniax)
+        }
+        document.write("<br>")
+
+        document.write("<strong> 3b </strong> <br>")
+
+        var n = Math.ceil(n)
+        var liniax = "x ";
+        for (var k = 0; k < n; k++)
+            document.write(liniax)
+        document.write("<br>")
+        for (var i = 0; i < n - 2; i++) {
+            document.write("x")
+            for (j = 0; j < 2 * n - 3; j++)
+                document.write("&nbsp;")
+            document.write("x")
+            document.write("<br>");
+        }
+        for (var k = 0; k < n; k++)
+            document.write(liniax)
+
+        document.write("<br>")
+
+        document.write("<strong> 3d </strong> <br>")
+        var n = Math.ceil(n)
+        for (i = 0; i <= n; i++) {
+            for (a = 1; a <= i; a++) {
+                document.write(a);
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+
+        document.write("<strong> 3c </strong> <br>")
+        var n = Math.ceil(n)
+        var a = n - 1
+        for (i = 2; i <= n; i++)
+            document.write("&nbsp;")
+        document.write("x")
+        document.write("<br>")
+        for (k = 3; k <= n; k++) {
+            for (i = 1; i <= n; i++) {
+                if (i == n) {
+                    document.write("x")
+                }
+                else if (i == a) {
+                    document.write("x")
+                }
+                else {
+                    document.write("&nbsp;")
+                }
+
+            }
+            document.write("<br>")
+            a = a - 1
+        }
+        var liniax = "";
+        for (var j = 1; j < i; j++) {
+            liniax = "x"
+            document.write(liniax)
+        }
+
+        document.write("<br>")
+        document.write("<strong> 3e </strong> <br>")
+        var n = Math.ceil(n)
+        for (var i = n; i > 0; i--) {
+            document.write("<br>")
+            for (var j = i; j > 0; j--)
+                document.write("&nbsp;")
+            for (k = (n - i + 1); k >= 1; k--)
+
+                document.write(k);
+
+        }
+
+
+        document.write("<br>")
+        document.write("<strong> 3f </strong> <br>")
+        var n = Math.ceil(n)
+        var a = 1
+        if (n == 0 || n == 1) {
+            document.write("a")
+        }
+        else {
+            for (var i = n; i >= 1; i--)
+                a = a * i;
+        }
+        document.write(a)
+
+
+        document.write("<br>")
+        document.write("<strong> 3g </strong> <br>")
+        var s = 0
+        for (var i = 0; i <= n; i++) {
+            if (i % 2 == 0) {
+                s += i
+            }
+
+        }
+        document.write(s)
+
+        document.write("<br>")
+        document.write("<strong> 3h </strong> <br>")
+        for (var i = 2; i < n; i++) {
+            if (n % i == 0) {
+                alert("liczba nie jest  liczbą pierwszą")
+            }
+            else {
+                alert("liczba jest liczbą pierwszą")
+            }
+        }
+
+        document.write("<br>")
+        document.write("<strong> 3i </strong> <br>")
+        document.write("<table>")
+        document.write("<tr>")
+        document.write("<th class =\"kolor\">")
+        document.write("</th>")
+        for (i = 1; i <= n; i++) {
+            document.write("<th>")
+            document.write(i)
+            document.write("</th>")
+        }
+        document.write("<tr>")
+        for (i = 1; i <= n; i++) {
+            document.write("<tr>")
+            document.write("<th>")
+            document.write(i)
+            document.write("</th>")
+            for (j = 1; j <= n; j++) {
+                if (i == j) {
+                    document.write("<th class=\"kolor\">")
+                    document.write(i * j)
+                    document.write("</th>")
+                }
+                else {
+                    document.write("<td>")
+                    document.write(i * j)
+                    document.write("</td>")
+                }
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+
+    </script>
+    <script>
+        document.write("<strong> 4 </strong> <br>")
+        var n = prompt("podaj regon")
+        var reg = n
+
+        if (reg.length == 9) {
+            regonek = reg[0] * 8 + reg[1] * 9 + reg[2] * 2 + reg[3] * 3 + reg[4] * 4 + reg[5] * 5 + reg[6] * 6 + reg[7] * 7
+            if (regonek % 11 == reg[8]) {
+                alert("regon prawidłowy")
+            }
+            else alert("regon nieprawidłowy")
+        }
+        if (reg.length == 14) {
+            regonek = reg[0] * 2 + reg[1] * 4 + reg[2] * 8 + reg[3] * 5 + reg[4] * 0 + reg[5] * 9 + reg[6] * 7 + reg[7] * 3 + reg[8] * 6 + reg[9] * 1 + reg[10] * 2 + reg[11] * 4 + reg[12] * 8
+            if (regonek % 11 == reg[13]) {
+                alert("regon prawidłowy")
+            }
+            else alert("regon nieprawidłowy")
+        }
+        if (reg.length != 9 && reg.length != 14) {
+            alert("podałeś nieprawidłowy regon ")
+        }
+    </script>
+</body>
+
+</html>

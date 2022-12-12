@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div><a href="mati.html">Powrót</a></div>
+    <h2>Punkty lecą z nieba ?</h2>
+    <textarea name="area" id="area" cols="30" rows="10" disabled style="overflow: hidden; resize: none; ">
+
+
+
+
+
+
+
+ .... szósty punkt .... 
+ .... piąty punkt .... 
+ .... czwarty punkt .... 
+ .... trzeci punkt ....
+ .... drugi punkt ....
+ .... pierwszy punkt ....
+
+
+
+
+
+
+    </textarea>
+    <script>
+        let tab1 = []
+        function lol() {
+            let pom = document.getElementById("area")
+            let pom1 = pom.innerHTML
+            let spl = pom1.split("\n")
+            tab1 = spl
+            console.table(spl)
+            let pom2 = tab1.pop()
+            tab1.unshift(pom2)
+            let pom3 = tab1.join("\n")
+            pom.innerHTML = pom3
+        }
+        window.setInterval(lol, 500)
+    </script>
+</body>
+
+</html>

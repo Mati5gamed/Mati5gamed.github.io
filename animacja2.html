@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div><a href="mati.html">Powrót</a></div>
+    <input type="text" id="tekst" value="Ciekawe czy uda Ci się to zrobić? ">
+
+    <script>
+        let tab1 = []
+        function txt() {
+            let pom = document.getElementById("tekst")
+            let pom1 = pom.value
+            let spl = Array.from(pom1)
+            tab1 = spl
+            let pom2 = tab1.shift()
+            tab1.push(pom2)
+            console.log(pom1)
+            console.table(tab1)
+            let pom3 = tab1.join("")
+            pom.value = pom3
+        }
+
+        window.setInterval(txt, 1000)
+
+    </script>
+</body>
+
+</html>

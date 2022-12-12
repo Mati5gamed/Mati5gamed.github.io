@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div><a href="mati.html">Powrót</a></div>
+    <img src="interia.jpg" id="gfx" alt="costam">
+    <script>
+
+        let p = document.getElementById("gfx")
+        let szer = 200;
+        p.style.width = szer + "px"
+        let flaga = true
+
+        setInterval(() => {
+
+            if (flaga) szer += 10; else szer -= 10;
+            p.style.width = szer + "px";
+            if (szer >= 400) flaga = !flaga;
+            if (szer == 10) flaga = true
+        }, 100);
+    </script>
+
+</body>
+
+</html>
