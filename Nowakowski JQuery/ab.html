@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="query.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#srodek").on("mousedown", function (e) {
+                console.log("x: " + e.clientX + ", y: " + e.clientY)
+                $(window).on("mousemove", function (e) {
+                    console.log("x: " + e.clientX + ", y: " + e.clientY)
+                    szer = $("body").width()
+                    let pom1 = (e.pageX / szer) * 100
+                    $("#lewy").css("width", `${pom1}%`)
+                    let pom2 = 98 - pom1
+                    $("#prawy").css("width", `${pom2}%`)
+                    console.log("pom1:" + pom1)
+                })
+                $(window).on("mouseup", function (e) {
+                    console.log("x: " + e.clientX + ", y: " + e.clientY)
+                    $(window).off("mousemove")
+                })
+            })
+
+        })
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+        }
+
+        #prawy {
+            background-color: blue;
+            width: 49%;
+            height: 100vh;
+            float: left;
+            font-size: 2em;
+            color: white;
+        }
+
+        #srodek {
+            background-color: black;
+            width: 2%;
+            height: 100vh;
+            float: left;
+        }
+
+        #lewy {
+            background-color: red;
+            width: 49%;
+            height: 100vh;
+            float: left;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lewy">A</div>
+    <div id="srodek"></div>
+    <div id="prawy">B</div>
+</body>
+
+</html>

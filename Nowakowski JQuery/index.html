@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="query.js"></script>
+    <script>
+        p = 0;
+        $(document).ready(function () {
+            $("#bt1").on("mouseover", function () {
+                $("#bt1").css("background", "#ff0000")
+                $("#h1").text("obsługa zdarzeń dodana")
+            })
+
+            $("#bt1").on("click", function () {
+                if (p == false) {
+                    $("#d1").css("background", "#ff0000") //ustawienie koloru
+                    $("#d1").css("left", "10px")
+                    $("#d1").text("text bold" + "</br>")
+                    $("#d1").css("font-weight", "bold")
+                    $("#d1").text("text italic")
+                }
+                else {
+                    $("#bt1").css("background", "gray")
+                    $("#d1").css("background", "gray")
+                }
+            })
+
+
+        })
+
+
+    </script>
+    <style>
+        #d1 {
+            background-color: gray;
+            height: 600px;
+            width: 600px;
+        }
+
+        button {
+            width: 140px;
+            height: 60px;
+            background-color: gray;
+
+        }
+
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1">
+        <p>T : jQuery - zdarzenia</p>
+    </h1>
+    <button id="bt1">Dodaj /Usuń</button>
+    <div id="d1">
+
+    </div>
+</body>
+
+</html>
