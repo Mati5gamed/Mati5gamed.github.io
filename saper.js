@@ -345,7 +345,7 @@ let pklik = function (wspy, wspx) {
 
     else if (przycisk.classList.contains("flaga")) {
         przycisk.classList.add("pytajnik")
-        przycisk.children[0].src = "img/pyt.PNG"
+        przycisk.children[0].src = "img/pyt.png"
         przycisk.classList.remove("flaga")
         lflag.innerHTML = parseInt(lflag.innerHTML) + 1
         przycisk.onclick = function () {
