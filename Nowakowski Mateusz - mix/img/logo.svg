@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="250"
+   height="250"
+   viewBox="0 0 66.145832 66.145833"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.9825758"
+     inkscape:cx="73.594106"
+     inkscape:cy="122.37744"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1352"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path69"
+       style="stroke-width:0.332863"
+       d="M 65.939854,33.072918 A 32.866936,32.866936 0 0 0 33.072918,0.20598221 32.866936,32.866936 0 0 0 0.20598221,33.072918 32.866936,32.866936 0 0 0 33.072918,65.939854 32.866936,32.866936 0 0 0 65.939854,33.072918 Z" />
+    <path
+       id="path328"
+       style="fill:#ffffff;stroke-width:0.264583"
+       d="M 57.955982,33.072918 A 24.883064,24.883064 0 0 1 33.072918,57.955982 24.883064,24.883064 0 0 1 8.1898537,33.072918 24.883064,24.883064 0 0 1 33.072918,8.1898537 24.883064,24.883064 0 0 1 57.955982,33.072918 Z" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;fill:#ffffff;stroke-width:0.264583"
+       id="text384"
+       transform="rotate(-135,32.496921,31.766403)"><textPath
+         xlink:href="#path328"
+         id="textPath437"><tspan
+           id="tspan382"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93889px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.264583">NOWAKOWSKI</tspan></textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.9389px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0.918104px;fill:#ffffff;stroke-width:0.264583"
+       id="text442"
+       transform="rotate(117.65678,33.843735,32.036562)"><textPath
+         xlink:href="#path69"
+         id="textPath445"><tspan
+           id="tspan440"
+           style="stroke-width:0.264583">MATEUSZ</tspan></textPath></text>
+  </g>
+</svg>
