@@ -116,13 +116,13 @@ button{
         width: 100%;
     }
 }
-a{
+.powrot>a{
     text-decoration: none;
     color: teal;
     display: block;
     transition: 0.5s;
 }
- a:hover{
+ .powrot>a:hover{
     color: red;
     font-size: 1.6em;
     transition: 1s;
