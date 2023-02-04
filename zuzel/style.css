@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+#canvas {
+    border: solid 1px;
+}
+
+.divokr {
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 90px;
+    text-align: center;
+
+}
+
+.container {
+    position: fixed;
+    right: 300px;
+    top: 100px;
+
+}
+
+.wyg {
+    height: 100px;
+    width: 800px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    background-color: black;
+
+
+}
