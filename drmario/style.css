@@ -82,3 +82,14 @@ body {
     top: 335px;
     left: 578px;
 }
+a{
+    text-decoration: none;
+    color: teal;
+    display: block;
+    transition: 0.5s;
+}
+ a:hover{
+    color: red;
+    font-size: 1.6em;
+    transition: 1s;
+}
