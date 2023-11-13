@@ -48,7 +48,27 @@
            <a href="https://google.com"><img src="google.png" alt="google"></a>
             <a href="https://linkedin.com"><img src="linked-in.png" alt="linked-in"></a>
         </aside>
-    </main>
+        <div>
+            <img src="logo2.png" alt="" id="gfx">
+            <script>
+                
+                
+                let p = document.getElementById("gfx")
+                let szer = 200;
+                p.style.width = szer + "px"
+                let flaga = true
+                
+                setInterval(() => {
+                    
+                    if (flaga) szer += 10; else szer -= 10;
+                    p.style.width = szer + "px";
+                    if (szer >= 500) flaga = !flaga;
+                    if (szer == 10) flaga = true
+                }, 100);
+                
+                </script>
+    </div>
+</main>
     <footer>
         <p class="center gap-1">&copy; Mateusz Nowakowski 2022</p>
     </footer>
